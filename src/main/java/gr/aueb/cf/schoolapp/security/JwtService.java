@@ -14,11 +14,11 @@ import java.util.function.Function;
 
 public class JwtService {
 
-    //    private String secretKey = System.getenv("SECRET_KEY");
-//    private String secretKey = "FvArDZiJ1hvR9k3Ks1J6s8FqbmL6rRnlmTL5J3jNiT8";
+    private String secretKey = System.getenv("SECRET_KEY");
+
 
     //    Strong security 384-bits = 48 bytes = 64 Base64URL characters
-    private String secretKey = "c82ff93231b35b1edcb8ee03fc25e46d06a83d06d1d88f0e6af359fc02ced4d1";
+
     private long jwtExpiration = 10800000;  // 3 hours in milliseconds
 
 //    if use refresh expiration token
